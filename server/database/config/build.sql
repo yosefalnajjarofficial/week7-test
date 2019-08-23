@@ -1,0 +1,11 @@
+BEGIN;
+
+DROP TABLE IF EXISTS cities cascade;
+
+CREATE TABLE cities (
+    id SERIAL PRIMARY KEY NOT NULL,
+    name VARCHAR(50) NOT NULL,
+    city VARCHAR(150) NOT NULL
+);
+
+COMMIT;
